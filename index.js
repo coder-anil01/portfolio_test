@@ -24,6 +24,10 @@ app.use(express.static(path.join(__dirname, "./client/dist")))
 // app.use('/api/v1/review', reviewsRoute);
 app.use('/api/v1/payment', paymentRoute);
 
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+  })
+
 app.use('*', function(req, res){
     res.sendFile(path.join(__dirname, "./client/dist/index.html"))
 });
