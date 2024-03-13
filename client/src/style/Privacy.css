@@ -1,0 +1,13 @@
+.policy{
+    width: 100%;
+}
+.policy-container{
+    padding: 50px 5vw;
+}
+.policy-title{
+    font-size: 24px;
+    margin-block: 20px;
+}
+.policy-p{
+    line-height: 30px;
+}

@@ -19,13 +19,13 @@ app.use(express.json({limit: '20mb'}));
 app.use(express.urlencoded({ extended: true, limit: '20mb' }));
 app.use(cors());
 app.use(morgan('dev'));
-app.use(express.static(path.join(__dirname, "./client/build")))
+app.use(express.static(path.join(__dirname, "./client/dist")))
 
 // app.use('/api/v1/review', reviewsRoute);
 app.use('/api/v1/payment', paymentRoute);
 
 app.use('*', function(req, res){
-    res.sendFile(path.join(__dirname, "./client/build/index.html"))
+    res.sendFile(path.join(__dirname, "./client/dist/index.html"))
 });
 
 app.listen(PORT, () => {

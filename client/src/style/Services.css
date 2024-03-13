@@ -1,0 +1,40 @@
+.services{
+    min-height: 30vh;
+}
+.services-container{
+    padding: 20px 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.services-project-card{
+    padding: 10px;
+    border: 1px solid white;
+}
+.services-project-image{
+    width: 100%;
+}
+.services-project-title{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* PAD */
+@media screen and (max-width: 850px) {
+    .services-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .services-project-card{
+        width: 37vw;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 500px) {
+    .services-project-card{
+        width: 100% !important;
+    }
+}

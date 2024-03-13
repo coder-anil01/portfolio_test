@@ -1,0 +1,21 @@
+.dashbord-main{
+    width: 100%;
+    min-height: 100vh;
+}
+.dashbord-container{
+    padding: 80px 5vw 20px 5vw;
+}
+.dashbord-card{
+    background-color: #3c3b3b;
+    margin: 20px 0;
+    padding: 20px;
+}
+.dashbord-card div{
+    padding: 5px 0;
+}
+.dashbord-card-uper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.dashbord-card-text{}
+.dashbord-card-message{}
