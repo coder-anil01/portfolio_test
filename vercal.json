@@ -1,13 +1,14 @@
+
 {
-    "version": 2,
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/client/dist/$1"
-      }
-    ]
-  }
+  "version": 2,
+  "routes": [
+    {
+      "src": "./index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "/dist/(.*)",
+      "dest": "/dist/$1"
+    }
+  ]
+}
